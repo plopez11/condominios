@@ -1,0 +1,76 @@
+<div class="condominios" color="medium">
+    <ion-card fixed class="card" color="primary">
+        <ion-item color="secondary" no-border lines="none">
+
+            <ion-label class="Label_balance">
+
+                <span><b>
+
+                  {{ payment.created | date : 'dd MM yyyy' }}
+                </b>
+              </span>
+
+            </ion-label>
+        </ion-item>
+        <ion-item no-border lines="none">
+            <ion-label class="Label_title" color="secondary">
+                <h3>
+                    Banco:
+                </h3>
+            </ion-label>
+            <ion-label>
+                <small> {{ payment.bank }} </small>
+            </ion-label>
+        </ion-item>
+        <ion-item no-border lines="none">
+            <ion-label class="Label_title" color="secondary">
+                <h3>
+                    Referencia:
+                </h3>
+            </ion-label>
+            <ion-label>
+                <small> {{ payment.reference }} </small>
+            </ion-label>
+        </ion-item>
+        <ion-item no-border lines="none">
+            <ion-label class="Label_title" color="secondary">
+                <h3>
+                    Descripcion:
+                </h3>
+            </ion-label>
+            <ion-label>
+                <small>{{ payment.description }}</small>
+            </ion-label>
+        </ion-item>
+        <ion-item no-border lines="none">
+            <ion-label class="Label_title" color="secondary">
+                <h3>
+                    Pago:
+                </h3>
+            </ion-label>
+            <ion-label>
+                <small>{{ payment.amount }}</small>
+            </ion-label>
+        </ion-item>
+        <ion-item no-border lines="none">
+            <ion-label class="Label_title" color="secondary">
+                <h3>
+                    Saldo Antes:
+                </h3>
+            </ion-label>
+            <ion-label>
+                <small>{{ payment.previousBalance }}</small>
+            </ion-label>
+        </ion-item>
+        <ion-item no-border lines="none">
+            <ion-label class="Label_title" color="secondary">
+                <h3>
+                    Saldo Después:
+                </h3>
+            </ion-label>
+            <ion-label>
+                <small>{{ payment.BalanceAfterPay }}</small>
+            </ion-label>
+        </ion-item>
+    </ion-card>
+</div>

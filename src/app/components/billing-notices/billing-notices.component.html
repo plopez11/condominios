@@ -1,0 +1,9 @@
+<!-- <ion-grid fixed> -->
+
+<ion-row class="row_title" justify-content-center align-items-center style="height: 100%" color="medium">
+    <ion-col size="12" *ngFor="let billingNotice of billingNotices">
+        <app-billing-notice [billingNotice]="billingNotice">
+        </app-billing-notice>
+    </ion-col>
+</ion-row>
+<!-- </ion-grid> -->

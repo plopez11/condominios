@@ -1,0 +1,36 @@
+.row_title {
+    margin-top: 2;
+}
+
+.Label_title {
+    display: flex;
+    justify-content: center;
+    color: rgb(7, 41, 30);
+    text-align: center;
+    font-size: 2em !important;
+    text-shadow: 1px 3px 4px rgb(197, 97, 102);
+    font-family: "SegoeUI-BoldItalic";
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 2;
+}
+
+.Label_balance {
+    display: flex;
+    justify-content: center;
+    color: rgb(125, 64, 14);
+    text-align: center;
+    font-size: 1.2em !important;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    box-shadow: none;
+    //background: #caf4dd;
+    padding: 2px 2px #caf4dd;
+    margin-left: 2px;
+    margin-top: 2px;
+    margin-bottom: 0px;
+}

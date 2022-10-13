@@ -1,0 +1,25 @@
+<!-- <ion-grid fixed> -->
+<ion-row justify-content-center align-items-center style="height: 100%" color="medium">
+    <ion-col size="12">
+        <ion-card fixed class="card" color="primary">
+            <ion-item class="Label_balance" color="primary" no-border>
+                <ion-label class="Label_balance"><b>Descripción</b>
+                </ion-label>
+                <ion-label class="Label_balance"><b>Total</b></ion-label>
+                <ion-label class="Label_balance"><b>Cuota</b></ion-label>
+            </ion-item>
+
+            <ion-col size="12" *ngFor="let billingNoticeDetail of billingNoticeDetail">
+                <app-billing-detail [billingNoticeDetail]="billingNoticeDetail">
+                </app-billing-detail>
+            </ion-col>
+        </ion-card>
+
+    </ion-col>
+</ion-row>
+<ion-row>
+    <ion-col size="12">
+        <hr>
+    </ion-col>
+</ion-row>
+<!-- </ion-grid> -->
