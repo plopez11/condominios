@@ -24,7 +24,7 @@ export class Tab2Page {
   ngOnInit() {
 
     this.siguientes();
-    this.loadBillingDetails();
+    // this.loadBillingDetails();
     this.loadApartments();  
   };
             

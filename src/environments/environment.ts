@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  // url: 'http://190.73.67.195:3000'
-  url:'http://localhost:3000'
+  url: 'https://condominio-server.herokuapp.com'
+  //url:'http://localhost:3000'
 };
 
 /*

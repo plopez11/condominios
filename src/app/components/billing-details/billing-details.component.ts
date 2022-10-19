@@ -23,7 +23,8 @@ export class BillingDetailsComponent implements OnInit {
     console.log('billDetail:',this.billingNoticesId);
     this.billingDetailSrv.getBillingNoticeDetailById(pull,this.billingNoticesId)
     .subscribe( resp => {    
-        this.billingNoticeDetail.push(...resp.billingNoticeDetail);  
+        this.billingNoticeDetail.push(...resp.billingNoticeDetail); 
+        console.log(resp);
         
     });
     
